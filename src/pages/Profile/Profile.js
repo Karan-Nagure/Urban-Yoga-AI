@@ -34,7 +34,7 @@ export default function Profile() {
   useEffect(() => {
     if (!user) { navigate('/login'); return; }
     loadData();
-  }, [user]);
+  }, [user, navigate]);
 
   const loadData = async () => {
     setLoading(true);
