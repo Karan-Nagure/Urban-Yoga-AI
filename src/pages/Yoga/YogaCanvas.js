@@ -15,7 +15,7 @@ import "./YogaCanvas.css";
 
 let flag = false;
 let skeletonColor = "rgb(255,0,0)";
-let interval;
+// let interval;
 
 function YogaCanvas() {
   const { user } = useAuth();
@@ -103,7 +103,7 @@ function YogaCanvas() {
     );
     const countAudio = new Audio(count);
     countAudio.loop = true;
-    interval = setInterval(() => detectPose(detector, poseClassifier, countAudio), 100);
+    // interval = setInterval(() => detectPose(detector, poseClassifier, countAudio), 100);
   };
 
   const detectPose = async (detector, poseClassifier, countAudio) => {
